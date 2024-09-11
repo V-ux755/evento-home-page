@@ -1,0 +1,205 @@
+/* BASE STYLES */
+body {
+    font-family: 'Lato' sans-serif;
+    color: #fff;
+    background-image: url('https://images.unsplash.com/photo-1583795484071-3c453e3a7c71?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=100');
+    background-position-y: -150px;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: darken;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    overflow-y: hidden;
+    margin: 0;
+    
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+/* HEADER */
+
+/* header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.logo {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.links {
+    display: flex;
+}
+
+ul li {
+    list-style: none;
+    margin: 10px;
+    
+}
+
+.link {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.75);
+} */
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1150px;
+    margin-left: auto;
+    margin-right: auto;
+    animation: fade-in 0.5s;
+    padding: 10px;
+}
+
+.logo {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.links {
+    list-style: none;
+    display: flex;
+}
+
+.link-item {
+    margin-right: 25px;
+}
+
+.link {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.75);
+    font-weight: 500;
+    font-size: 14px;
+    transition: all 0.4s;
+
+}
+
+.link:hover {
+    color: rgba(255, 255, 255, 1);
+}
+
+/* MAIN */
+
+.main {
+    text-align: center;
+    margin-top: 110px;
+    margin-top: 110px;
+    animation: fade-in 0.5s 0.1s backwards;
+
+}
+
+.heading {
+    font-size: 64px;
+    font-weight: 800;
+    margin-bottom: 25px;
+    max-width: 550px;
+    margin-right: auto;
+    margin-left: auto;
+    line-height: 0.9;
+
+}
+
+.text {
+    font-size: 24px;
+    max-width: 580px;
+    margin-left: auto;
+    margin-right: auto;
+    opacity: 0.8;
+    line-height: 1.4;
+    font-weight: 400;
+    margin-top: 60px;
+
+}
+
+.text--bold {
+
+}
+
+.form {
+
+}
+
+.input {
+    width: 511px;
+    height: 64px;
+    padding: 0;
+    border: none;
+    opacity: 0.8;
+    border-radius: 3px;
+    padding-left: 30px;
+    font-size: 17px;
+    font: inherit;
+    outline: none;
+    transition: all 0.4s;
+
+}
+
+.input:focus {
+
+    opacity: 1;
+
+    }
+
+.input::placeholder {
+    color: #000;
+}
+
+
+
+
+.btn {
+    border: none;
+    padding: 0;
+    background-color: #000;
+    height: 64px;
+    width: 133px;
+    font: inherit;
+    color: #fff;
+    border-radius: 3px;
+    margin-left: 5px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 14px;
+    font-weight: 500;
+    transition: all 0.4s;
+
+
+
+}
+
+.btn:hover {
+    cursor: pointer;
+    background-color: #161616;
+}
+
+.footer {
+    display: flex;
+    width: 1150px;
+    justify-content: space-between;
+    margin-top: auto;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: auto;
+    font-size: 12px;
+    padding-bottom: 15px; /* You can also use margin */
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    padding-top: 10px;
+    color: rgba(255, 255, 255, 0.5);
+    animation: fade-in 0.5s 0.2s backwards;
+}
+ 
